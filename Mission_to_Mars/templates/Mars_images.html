@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Pictures</title>
+<!-- <link rel="stylesheet" href="reset.css"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/mars.css">
+<div>
+  <nav>
+<div class="container">
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="/">Homepage </a>
+      </li>
+      <li>
+        <a href="/images">Mars Images </a>
+      </li>
+      <li>
+        <a href="/scrape">Get Most Recent Data</a>
+      </li>
+    </ul>
+  </nav>
+</div>  
+</head>
+
+<body>
+  
+<main>
+<br><br><br>
+  <body>
+<!-- 1st Container start -->
+    <div class="row">
+      <div class="col-md-2">
+        <p></p>
+      </div>
+      <div class="col-md-8" id="main_container">
+        <element class="section">
+          <header>
+              <h2>Mars Images</h2>
+          </header>
+        </element>
+<!--Nested-->
+        <div class="row">
+
+<!--Images column-->
+            <div class="col-md-6" id="main_container">
+              <br>
+              <img class="fit-image" src="{{mars_image_links1}}" class="img-responsive fit-image" alt="">
+              <h1 class="image_title"> {{mars_image_title1}} </h1>
+              <br>
+              <img class="fit-image" src="{{mars_image_links2}}"alt="">
+              <h1 class="image_title">{{mars_image_title2}}</h1>
+              <br>
+            </div>
+<!--End-->
+
+<!--Images column-->
+            <div class="col-md-6" id="main_container">
+              <br>
+              <img class="fit-image" src="{{mars_image_links4}}" alt="">
+              <h1 class="image_title">{{mars_image_title4}}</h1>
+              <br>
+              <img class="fit-image" src="{{mars_image_links3}}" class="img-responsive fit-image"alt="">
+              <h1 class="image_title">{{mars_image_title3}}</h1>
+              <br>
+            
+            </div>
+
+<!--End-->
+          </div> 
+<!--Nested end--> 
+      </div>
+      <div class="col-md-2">
+        <p></p>
+      </div>
+    </div>
+    <br><br><br>
